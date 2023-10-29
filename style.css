@@ -1,0 +1,86 @@
+body {
+    font-family: Arial;
+    background-color: #f0f0f0; /* Set a background color */
+}
+.headerContainer {
+    background: #333; /* Set the background color for the container */
+    
+    text-align: center; /* Center the text within the container */
+}
+#mainHeading {
+    text-align: center;
+    background: linear-gradient(to right, #6184e7, #84ddf1, #eb8d8d); /* Create a gradient background */
+    background-size: 200% 100%; /* Make the gradient twice as wide as the element */
+    color: transparent; /* Set text color to transparent */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For webkit browsers */
+    animation: shimmer 2s infinite linear; /* Apply shimmer effect */
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0; /* Start the gradient at the right side */
+    }
+    100% {
+        background-position: -200% 0; /* Move the gradient to the left side */
+    }
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    padding: 10px; /* Add padding to the container */
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    margin-bottom: 10px; /* Add some space between the container and the bottom edge */
+background-color: #eaedf4;
+    
+}
+
+.todoContainer {
+    text-align: left; /* Align text within the container to the left */
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-bottom: 10px; /* Add some space between the container and the bottom edge */
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    background-color: rgb(240, 249, 252);
+}
+
+#todoInput , #dateInput{
+    font-size: 15px;
+    padding: 10px 5px;
+}
+.delTodoBtn{
+background-color: rgb(87,4,4);
+color: white;
+border: none;
+border-radius: 10px;
+padding: 15px 0px;
+cursor:pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+.addTodoBtn{
+    background-color: rgb(5,119,4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.addTodoBtn:hover {
+    background-color: #5a704b; /* Change background color on hover */
+    transform: scale(1.05); /* Scale the button slightly on hover */
+}
+.delTodoBtn:hover {
+    background-color: #672103; /* Change background color on hover */
+    transform: scale(1.05); /* Scale the button slightly on hover */
+}
